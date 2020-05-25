@@ -81,3 +81,10 @@ header-links a{
     position: absolute;
     top: 50%;
 }
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+}
+}
