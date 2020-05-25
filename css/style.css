@@ -70,3 +70,14 @@ header-links a{
 .navbar-nav .basket-icon{
     margin-right: 6.5rem !important;
 }
+
+/* Slider One */
+
+.site-slider{
+    position: relative;
+}
+
+.position-top{
+    position: absolute;
+    top: 50%;
+}
