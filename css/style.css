@@ -3,7 +3,7 @@
 
 :root{
     --light-gray: #2b3032a1;
-    --primary-color: #45ccb8;
+    --primary-color: #13192c;
     --border: #2b303218;
     --text-color: #ff686b;
     --bold: "Bold", cursive;
@@ -86,5 +86,11 @@ header-links a{
 .site-slider .slider-btn .next{
     background-color: var(--primary-color);
     padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    color: white;
+    margin: 0 1rem;
 }
+
+.right-0{
+    right: 0;
 }
