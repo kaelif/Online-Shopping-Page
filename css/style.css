@@ -6,13 +6,48 @@
     --primary-color: #45ccb8;
     --border: #2b303218;
     --text-color: #ff686b;
+    --bold: "Bold", cursive;
+    --medium: "Medium", cursive;
+    --light: "Light", cursive;
 }
 
-
-h1{
+.primary-color{
     color: var(--primary-color);
 }
 
-p{
-    color: var(--primary-color);
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.font-bold{
+    font-family: var(--bold);
+}
+
+.lightblue{
+    color:lightblue;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    font-family: var(--bold);
+}
+
+header .site-title {
+    font-family: var(--medium);
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item {
+    font-size: 0.7em;
+}
+
+header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
 }

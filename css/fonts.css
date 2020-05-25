@@ -1,0 +1,17 @@
+/* font-family: Oswald-Bold */
+@font-face {
+    font-family: Bold;
+    src: url("../Oswald/static/Oswald-Bold.ttf");
+}
+
+/* font-family: Oswald-Medium */
+@font-face {
+    font-family: Medium;
+    src: url("../Oswald/static/Oswald-Medium.ttf");
+}
+
+/* font-family: Oswald-Light */
+@font-face {
+    font-family: Light;
+    src: url("../Oswald/static/Oswald-Light.ttf");
+}
