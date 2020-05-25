@@ -1,0 +1,63 @@
+// Olark. Change click to chat language when offline/online
+var waitForOlark = setInterval(function () {
+    if (window.olark === undefined) {
+        return;
+    }
+  
+    olark('api.chat.onOperatorsAvailable', function() {
+
+        // Identify the element, and give it a class name
+        //document.getElementById('chat-status').className = 'chat-online';
+        $(".chat-status").addClass("chat-online");
+        $(".chat-status").removeClass("chat-offline");
+
+        $(".site-header-chat-mobile").addClass("chat-online");
+        $(".site-header-chat-mobile").removeClass("chat-offline");
+
+        $(".product-support-chat").addClass("chat-online");
+        $(".product-support-chat").removeClass("chat-offline");
+
+        $(".help-page-chat-status").addClass("chat-online");
+        $(".help-page-chat-status").removeClass("chat-offline");
+
+
+    });
+    olark('api.chat.onOperatorsAway', function() {
+
+        // Identify the element, and give it a class name
+        //document.getElementById('chat-status').className = 'chat-offline';
+        $(".chat-status").addClass("chat-offline");
+        $(".chat-status").removeClass("chat-online");
+
+        $(".site-header-chat-mobile").addClass("chat-offline");
+        $(".site-header-chat-mobile").removeClass("chat-online");
+
+        $(".product-support-chat").addClass("chat-offline");
+        $(".product-support-chat").removeClass("chat-online");
+
+
+        $(".help-page-chat-status").addClass("chat-offline");
+        $(".help-page-chat-status").removeClass("chat-online");
+
+    });
+
+
+
+    olark('api.chat.onMessageToVisitor', function() {
+
+        $(".site-header-chat-mobile--new-message").addClass("chat-new-message");
+    });
+
+
+    olark('api.box.onExpand', function() {
+        $(".site-header-chat-mobile--new-message").removeClass("chat-new-message");
+    });
+      
+    
+    clearInterval(waitForOlark);
+}, 100);
+    
+   
+    
+
+    

@@ -5,6 +5,6 @@ $(".single-item")
     autoplay: true,
     autplaySpeed: 3000,
     dots: true,
-    prevArrow: ".site-slider slider-btn .prev",
-    nextArrow: ".site-slider slider-btn .next"
+    prevArrow: ".site-slider slider-btn .prev .slick-prev",
+    nextArrow: ".site-slider slider-btn .next .slick-next"
 });

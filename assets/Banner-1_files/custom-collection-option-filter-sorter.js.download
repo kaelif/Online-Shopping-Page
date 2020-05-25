@@ -1,0 +1,404 @@
+
+    // Assign order for all options
+    var order = [3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 560, 570, 575, 580, 590, 600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 700, 710, 720, 730, 740, 745, 750, 760, 770, 780, 790, 800, 810, 820, 830, 840, 850, 860, 870, 880, 890, 900, 910, 920, 930, 940, 950, 960, 970, 980, 990, 1000, 1010, 1020, 1030, 1040, 1050, 1060, 1070, 1080, 1090, 1100, 1110, 1120, 1130, 1140, 1150, 1160, 1170, 1180, 1190, 1200, 1210, 1220, 1230, 1240, 1250, 1260, 1270, 1280, 1290, 1300, 1310, 1320, 1330, 1340, 1350, 1360, 1370, 1380, 1390, 1400, 1410, 1420, 1430, 1440, 1450, 1460, 1470, 1480, 1490, 1500, 1510, 1520, 1530, 1540, 1550, 1560, 1570, 1580, 1590, 1600, 1610, 1620, 1630, 1640, 1650, 1660, 1670, 1680, 1690, 1700, 1710, 1720, 1730, 1740, 1750, 1760, 1770, 1780, 1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2030, 2040, 2050, 2060, 2070, 2080, 2090, 2100, 2110, 2120, 2130, 2140, 2150, 2160, 2170, 2180, 2190, 2200, 2210, 2220, 2230, 2240, 2250, 2260, 2270, 2280, 2290, 2300, 2310, 2320, 2330, 2340, 2350, 2360, 2370, 2380, 2390, 2400, 2410, 2420, 2430, 2440, 2450, 2460, 2470, 2480, 2490, 2500, 2510, 2520, 2530, 2540, 2550, 2560, 2570, 2580, 2590, 2600, 2610, 2620, 2630, 2640, 2650, 2660, 2670, 2680, 2690, 2700, 2710, 2720, 2730, 2740, 2750, 2760, 2770, 2780, 2790, 2800, 2810, 2820, 2830, 2840, 2850, 2860, 2870, 2880, 2890, 2900, 2910, 2920, 2930, 2940, 2950, 2960, 2970, 2980, 2990, 3000, 10000];
+
+    // Product Options - Size
+	$(document.getElementById('option-value-xxx-small')).attr('customsort', 3);
+	$(document.getElementById('option-value-xx-small')).attr('customsort', 4);
+	$(document.getElementById('option-value-x-small')).attr('customsort', 5);    
+	$(document.getElementById('option-value-xs-sm')).attr('customsort', 20);
+	$(document.getElementById('option-value-small')).attr('customsort', 30);
+	$(document.getElementById('option-value-sm-md')).attr('customsort', 40);
+	$(document.getElementById('option-value-small-tall')).attr('customsort', 50);
+	$(document.getElementById('option-value-medium')).attr('customsort', 60);
+	$(document.getElementById('option-value-medium-large')).attr('customsort', 70);
+	$(document.getElementById('option-value-medium-short')).attr('customsort', 80);
+	$(document.getElementById('option-value-medium-tall')).attr('customsort', 90);
+	$(document.getElementById('option-value-md-lg')).attr('customsort', 100);
+	$(document.getElementById('option-value-large')).attr('customsort', 110);
+	$(document.getElementById('option-value-large-short')).attr('customsort', 120);
+	$(document.getElementById('option-value-large-tall')).attr('customsort', 130);
+	$(document.getElementById('option-value-lg-xl')).attr('customsort', 140);
+	$(document.getElementById('option-value-x-large')).attr('customsort', 150);
+	$(document.getElementById('option-value-x-large-short')).attr('customsort', 160);
+	$(document.getElementById('option-value-x-large-tall')).attr('customsort', 170);
+	$(document.getElementById('option-value-xx-large')).attr('customsort', 180);
+	$(document.getElementById('option-value-xxx-large')).attr('customsort', 190);
+	$(document.getElementById('option-value-xxxx-large')).attr('customsort', 210);
+	$(document.getElementById('option-value-0')).attr('customsort', 220);
+	$(document.getElementById('option-value-1-2')).attr('customsort', 230);
+	$(document.getElementById('option-value-1')).attr('customsort', 240);
+	$(document.getElementById('option-value-2')).attr('customsort', 250);
+	$(document.getElementById('option-value-2-3')).attr('customsort', 260);
+	$(document.getElementById('option-value-3')).attr('customsort', 270);
+	$(document.getElementById('option-value-3-4')).attr('customsort', 280);
+	$(document.getElementById('option-value-4')).attr('customsort', 290);
+	$(document.getElementById('option-value-4-5')).attr('customsort', 300);
+	$(document.getElementById('option-value-5')).attr('customsort', 310);
+	$(document.getElementById('option-value-5-6')).attr('customsort', 320);
+	$(document.getElementById('option-value-6')).attr('customsort', 330);
+	$(document.getElementById('option-value-6 Short')).attr('customsort', 340);
+	$(document.getElementById('option-value-6.5')).attr('customsort', 350);
+	$(document.getElementById('option-value-7')).attr('customsort', 360);
+	$(document.getElementById('option-value-7-5')).attr('customsort', 370);
+	$(document.getElementById('option-value-7-8')).attr('customsort', 380);
+	$(document.getElementById('option-value-8')).attr('customsort', 390);
+	$(document.getElementById('option-value-8 Short')).attr('customsort', 400);
+	$(document.getElementById('option-value-8 Tall')).attr('customsort', 410);
+	$(document.getElementById('option-value-8-5')).attr('customsort', 420);
+	$(document.getElementById('option-value-8-9')).attr('customsort', 430);
+	$(document.getElementById('option-value-9')).attr('customsort', 440);
+	$(document.getElementById('option-value-9-5')).attr('customsort', 450);
+	$(document.getElementById('option-value-9-10')).attr('customsort', 460);
+	$(document.getElementById('option-value-10')).attr('customsort', 470);
+	$(document.getElementById('option-value-10 Short')).attr('customsort', 480);
+	$(document.getElementById('option-value-10 Tall')).attr('customsort', 490);
+	$(document.getElementById('option-value-10-5')).attr('customsort', 500);
+	$(document.getElementById('option-value-10-11')).attr('customsort', 510);
+	$(document.getElementById('option-value-11')).attr('customsort', 520);
+	$(document.getElementById('option-value-11-5')).attr('customsort', 530);
+	$(document.getElementById('option-value-11-12')).attr('customsort', 540);
+	$(document.getElementById('option-value-12')).attr('customsort', 550);
+	$(document.getElementById('option-value-12-13')).attr('customsort', 560);
+	$(document.getElementById('option-value-13')).attr('customsort', 570);
+	$(document.getElementById('option-value-13-1')).attr('customsort', 575);
+	$(document.getElementById('option-value-14')).attr('customsort', 580);
+	$(document.getElementById('option-value-15')).attr('customsort', 590);
+	$(document.getElementById('option-value-16')).attr('customsort', 600);
+	$(document.getElementById('option-value-24')).attr('customsort', 610);
+	$(document.getElementById('option-value-25')).attr('customsort', 620);
+	$(document.getElementById('option-value-26')).attr('customsort', 630);
+	$(document.getElementById('option-value-27')).attr('customsort', 640);
+	$(document.getElementById('option-value-28')).attr('customsort', 650);
+	$(document.getElementById('option-value-29')).attr('customsort', 660);
+	$(document.getElementById('option-value-30')).attr('customsort', 670);
+	$(document.getElementById('option-value-31')).attr('customsort', 680);
+	$(document.getElementById('option-value-32')).attr('customsort', 690);
+	$(document.getElementById('option-value-33')).attr('customsort', 700);
+	$(document.getElementById('option-value-34')).attr('customsort', 710);
+	$(document.getElementById('option-value-35')).attr('customsort', 720);
+	$(document.getElementById('option-value-35-36')).attr('customsort', 730);
+	$(document.getElementById('option-value-36')).attr('customsort', 740);
+	$(document.getElementById('option-value-38')).attr('customsort', 750);
+	$(document.getElementById('option-value-40')).attr('customsort', 770);
+	$(document.getElementById('option-value-42')).attr('customsort', 780);
+	$(document.getElementById('option-value-44')).attr('customsort', 790);
+	$(document.getElementById('option-value-2m')).attr('customsort', 800);
+	$(document.getElementById('option-value-2-5m')).attr('customsort', 810);
+	$(document.getElementById('option-value-3m')).attr('customsort', 820);
+	$(document.getElementById('option-value-3-5m')).attr('customsort', 830);
+	$(document.getElementById('option-value-4m')).attr('customsort', 840);
+	$(document.getElementById('option-value-4-5m')).attr('customsort', 850);
+	$(document.getElementById('option-value-5m')).attr('customsort', 860);
+	$(document.getElementById('option-value-5-5m')).attr('customsort', 870);
+	$(document.getElementById('option-value-6m')).attr('customsort', 880);
+	$(document.getElementById('option-value-6-5m')).attr('customsort', 890);
+	$(document.getElementById('option-value-7m')).attr('customsort', 900);
+	$(document.getElementById('option-value-7-5m')).attr('customsort', 910);
+	$(document.getElementById('option-value-8m')).attr('customsort', 920);
+	$(document.getElementById('option-value-8-5m')).attr('customsort', 930);
+	$(document.getElementById('option-value-9m')).attr('customsort', 940);
+	$(document.getElementById('option-value-9-5m')).attr('customsort', 950);
+	$(document.getElementById('option-value-10m')).attr('customsort', 960);
+	$(document.getElementById('option-value-10-5m')).attr('customsort', 970);
+	$(document.getElementById('option-value-11m')).attr('customsort', 980);
+	$(document.getElementById('option-value-11-5m')).attr('customsort', 990);
+	$(document.getElementById('option-value-12m')).attr('customsort', 1000);
+	$(document.getElementById('option-value-12m-lightwind')).attr('customsort', 1010);
+	$(document.getElementById('option-value-12-5m')).attr('customsort', 1020);
+	$(document.getElementById('option-value-13m')).attr('customsort', 1030);
+	$(document.getElementById('option-value-13-5m')).attr('customsort', 1040);
+	$(document.getElementById('option-value-14m')).attr('customsort', 1050);
+	$(document.getElementById('option-value-14m-lightwind')).attr('customsort', 1060);
+	$(document.getElementById('option-value-14-5m')).attr('customsort', 1070);
+	$(document.getElementById('option-value-15m')).attr('customsort', 1080);
+	$(document.getElementById('option-value-15m-lightwind')).attr('customsort', 1090);
+	$(document.getElementById('option-value-15-5m')).attr('customsort', 1100);
+	$(document.getElementById('option-value-15-5m-lightwind')).attr('customsort', 1110);
+	$(document.getElementById('option-value-16m')).attr('customsort', 1120);
+	$(document.getElementById('option-value-17m')).attr('customsort', 1130);
+	$(document.getElementById('option-value-17m-lightwind')).attr('customsort', 1140);
+	$(document.getElementById('option-value-17-5m')).attr('customsort', 1150);
+	$(document.getElementById('option-value-17-5m-lightwind')).attr('customsort', 1160);
+	$(document.getElementById('option-value-18m')).attr('customsort', 1170);
+	$(document.getElementById('option-value-19m')).attr('customsort', 1180);
+	$(document.getElementById('option-value-19m-lightwind')).attr('customsort', 1190);
+	$(document.getElementById('option-value-20m')).attr('customsort', 1200);
+
+
+    var elsize = $(document.getElementById('option-values-size'));
+    var mapsize = {};
+
+     $('#option-values-size .option-value').each(function() {
+        var elsize = $(this);
+        mapsize[elsize.attr('customsort')] = elsize;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapsize[order[i]]) {
+            elsize.append(mapsize[order[i]]);
+        }
+    }
+
+
+    // Sidebar Filter sort - filter_size  
+	$(document.getElementById('size_xxx-small')).attr('customsort', 3);
+	$(document.getElementById('size_xx-small')).attr('customsort', 4);    
+	$(document.getElementById('size_x-small')).attr('customsort', 5);
+	$(document.getElementById('size_xs-sm')).attr('customsort', 10);
+	$(document.getElementById('size_small')).attr('customsort', 20);
+	$(document.getElementById('size_sm-md')).attr('customsort', 30);
+	$(document.getElementById('size_small-tall')).attr('customsort', 40);
+	$(document.getElementById('size_medium')).attr('customsort', 50);
+	$(document.getElementById('size_medium-large')).attr('customsort', 60);
+	$(document.getElementById('size_medium-short')).attr('customsort', 70);
+	$(document.getElementById('size_medium-tall')).attr('customsort', 80);
+	$(document.getElementById('size_md-lg')).attr('customsort', 90);
+	$(document.getElementById('size_large')).attr('customsort', 100);
+	$(document.getElementById('size_large-short')).attr('customsort', 110);
+	$(document.getElementById('size_large-tall')).attr('customsort', 120);
+	$(document.getElementById('size_lg-xl')).attr('customsort', 130);
+	$(document.getElementById('size_x-large')).attr('customsort', 140);
+	$(document.getElementById('size_x-large-short')).attr('customsort', 150);
+	$(document.getElementById('size_x-large-tall')).attr('customsort', 160);
+	$(document.getElementById('size_xl-xxl')).attr('customsort', 170);
+	$(document.getElementById('size_xx-large')).attr('customsort', 180);
+	$(document.getElementById('size_xxx-large')).attr('customsort', 200);
+	$(document.getElementById('size_xxxx-large')).attr('customsort', 220);
+	$(document.getElementById('size_0')).attr('customsort', 230);
+	$(document.getElementById('size_1-2')).attr('customsort', 240);
+	$(document.getElementById('size_1')).attr('customsort', 250);
+	$(document.getElementById('size_2')).attr('customsort', 260);
+	$(document.getElementById('size_2-3')).attr('customsort', 270);
+	$(document.getElementById('size_3')).attr('customsort', 290);
+	$(document.getElementById('size_4')).attr('customsort', 300);
+	$(document.getElementById('size_4-5')).attr('customsort', 310);
+	$(document.getElementById('size_5')).attr('customsort', 320);
+	$(document.getElementById('size_5-6')).attr('customsort', 330);
+	$(document.getElementById('size_6')).attr('customsort', 340);
+	$(document.getElementById('size_6-short')).attr('customsort', 350);
+	$(document.getElementById('size_6-5')).attr('customsort', 360);
+	$(document.getElementById('size_7')).attr('customsort', 370);
+	$(document.getElementById('size_7-5')).attr('customsort', 380);
+	$(document.getElementById('size_7-8')).attr('customsort', 390);
+	$(document.getElementById('size_8')).attr('customsort', 400);
+	$(document.getElementById('size_8-short')).attr('customsort', 410);
+	$(document.getElementById('size_8-tall')).attr('customsort', 420);
+	$(document.getElementById('size_8-5')).attr('customsort', 430);
+	$(document.getElementById('size_8-9')).attr('customsort', 440);
+	$(document.getElementById('size_9')).attr('customsort', 450);
+	$(document.getElementById('size_9-5')).attr('customsort', 460);
+	$(document.getElementById('size_9-10')).attr('customsort', 470);
+	$(document.getElementById('size_10')).attr('customsort', 480);
+	$(document.getElementById('size_10-short')).attr('customsort', 490);
+	$(document.getElementById('size_10-tall')).attr('customsort', 500);
+	$(document.getElementById('size_10-5')).attr('customsort', 510);
+	$(document.getElementById('size_10-11')).attr('customsort', 520);
+	$(document.getElementById('size_11')).attr('customsort', 530);
+	$(document.getElementById('size_11-5')).attr('customsort', 540);
+	$(document.getElementById('size_11-12')).attr('customsort', 550);
+	$(document.getElementById('size_12')).attr('customsort', 560);
+	$(document.getElementById('size_12-13')).attr('customsort', 570);
+	$(document.getElementById('size_13')).attr('customsort', 580);
+	$(document.getElementById('size_13-1')).attr('customsort', 590);
+	$(document.getElementById('size_14')).attr('customsort', 600);
+	$(document.getElementById('size_15')).attr('customsort', 610);
+	$(document.getElementById('size_16')).attr('customsort', 620);
+	$(document.getElementById('size_24')).attr('customsort', 630);
+	$(document.getElementById('size_25')).attr('customsort', 640);
+	$(document.getElementById('size_26')).attr('customsort', 650);
+	$(document.getElementById('size_27')).attr('customsort', 660);
+	$(document.getElementById('size_28')).attr('customsort', 670);
+	$(document.getElementById('size_29')).attr('customsort', 680);
+	$(document.getElementById('size_30')).attr('customsort', 690);
+	$(document.getElementById('size_31')).attr('customsort', 700);
+	$(document.getElementById('size_32')).attr('customsort', 710);
+	$(document.getElementById('size_33')).attr('customsort', 720);
+	$(document.getElementById('size_34')).attr('customsort', 730);
+	$(document.getElementById('size_35')).attr('customsort', 740);
+	$(document.getElementById('size_35-36')).attr('customsort', 745);
+	$(document.getElementById('size_36')).attr('customsort', 750);
+	$(document.getElementById('size_38')).attr('customsort', 760);
+	$(document.getElementById('size_40')).attr('customsort', 770);
+	$(document.getElementById('size_42')).attr('customsort', 780);
+	$(document.getElementById('size_44')).attr('customsort', 790);
+	$(document.getElementById('size_2m')).attr('customsort', 800);
+	$(document.getElementById('size_2-5m')).attr('customsort', 810);
+	$(document.getElementById('size_3m')).attr('customsort', 820);
+	$(document.getElementById('size_3-5m')).attr('customsort', 830);
+	$(document.getElementById('size_4m')).attr('customsort', 840);
+	$(document.getElementById('size_4-5m')).attr('customsort', 850);
+	$(document.getElementById('size_5m')).attr('customsort', 860);
+	$(document.getElementById('size_5-5m')).attr('customsort', 870);
+	$(document.getElementById('size_6m')).attr('customsort', 880);
+	$(document.getElementById('size_6-5m')).attr('customsort', 890);
+	$(document.getElementById('size_7m')).attr('customsort', 900);
+	$(document.getElementById('size_7-5m')).attr('customsort', 910);
+	$(document.getElementById('size_8m')).attr('customsort', 920);
+	$(document.getElementById('size_8-5m')).attr('customsort', 930);
+	$(document.getElementById('size_9m')).attr('customsort', 940);
+	$(document.getElementById('size_9-5m')).attr('customsort', 950);
+	$(document.getElementById('size_10m')).attr('customsort', 960);
+	$(document.getElementById('size_10-5m')).attr('customsort', 970);
+	$(document.getElementById('size_11m')).attr('customsort', 980);
+	$(document.getElementById('size_11-5m')).attr('customsort', 990);
+	$(document.getElementById('size_12m')).attr('customsort', 1000);
+	$(document.getElementById('size_12m-lightwind')).attr('customsort', 1010);
+	$(document.getElementById('size_12-5m')).attr('customsort', 1020);
+	$(document.getElementById('size_13m')).attr('customsort', 1030);
+	$(document.getElementById('size_13-5m')).attr('customsort', 1040);
+	$(document.getElementById('size_14m')).attr('customsort', 1050);
+	$(document.getElementById('size_14m-lightwind')).attr('customsort', 1060);
+	$(document.getElementById('size_14-5m')).attr('customsort', 1070);
+	$(document.getElementById('size_15m')).attr('customsort', 1080);
+	$(document.getElementById('size_15m-lightwind')).attr('customsort', 1090);
+	$(document.getElementById('size_15-5m')).attr('customsort', 1100);
+	$(document.getElementById('size_15-5m-lightwind')).attr('customsort', 1110);
+	$(document.getElementById('size_16m')).attr('customsort', 1120);
+	$(document.getElementById('size_17m')).attr('customsort', 1130);
+	$(document.getElementById('size_17m-lightwind')).attr('customsort', 1140);
+	$(document.getElementById('size_17-5m')).attr('customsort', 1150);
+	$(document.getElementById('size_17-5m-lightwind')).attr('customsort', 1160);
+	$(document.getElementById('size_18m')).attr('customsort', 1170);
+	$(document.getElementById('size_19m')).attr('customsort', 1180);
+	$(document.getElementById('size_19m-lightwind')).attr('customsort', 1190);
+	$(document.getElementById('size_20m')).attr('customsort', 1200);
+
+
+    var elfiltersize = $('#realfiltergroup_size .productgrid--sidebar-item');
+    var mapfiltersize = {};
+
+     $('#realfiltergroup_size .filter-item').each(function() {
+        var elfiltersize = $(this);
+        mapfiltersize[elfiltersize.attr('customsort')] = elfiltersize;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfiltersize[order[i]]) {
+            elfiltersize.append(mapfiltersize[order[i]]);
+        }
+    }
+
+    // END SIZE FILTER SORT
+
+
+
+    // Length Range sort
+
+	$(document.getElementById('length-range_-56')).attr('customsort', 2230);
+	$(document.getElementById('length-range_56-60')).attr('customsort', 2240);
+	$(document.getElementById('length-range_60-66')).attr('customsort', 2250);
+	$(document.getElementById('length-range_66-70')).attr('customsort', 2260);
+	$(document.getElementById('length-range_70-80')).attr('customsort', 2270);
+	$(document.getElementById('length-range_80-90')).attr('customsort', 2280);
+	$(document.getElementById('length-range_90-100')).attr('customsort', 2290);
+	$(document.getElementById('length-range_-100')).attr('customsort', 2300);
+  
+
+    var elfilterlengthrange = $('#realfiltergroup_length-range .productgrid--sidebar-item');
+    var mapfilterlengthrange = {};
+
+     $('#realfiltergroup_length-range .filter-item').each(function() {
+        var elfilterlengthrange = $(this);
+        mapfilterlengthrange[elfilterlengthrange.attr('customsort')] = elfilterlengthrange;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfilterlengthrange[order[i]]) {
+            elfilterlengthrange.append(mapfilterlengthrange[order[i]]);
+        }
+    }
+  
+  
+    // Volume Range sort
+
+	$(document.getElementById('volume_-25l')).attr('customsort', 2330);
+	$(document.getElementById('volume_25l-30l')).attr('customsort', 2340);
+	$(document.getElementById('volume_30l-35l')).attr('customsort', 2350);
+	$(document.getElementById('volume_35l-40l')).attr('customsort', 2360);
+	$(document.getElementById('volume_40l-45l')).attr('customsort', 2370);
+	$(document.getElementById('volume_45l-50l')).attr('customsort', 2380);
+	$(document.getElementById('volume_-50l')).attr('customsort', 2390);
+  
+
+    var elfiltervolume = $('#realfiltergroup_volume .productgrid--sidebar-item');
+    var mapfiltervolume = {};
+
+    $('#realfiltergroup_volume .filter-item').each(function() {
+        var elfiltervolume = $(this);
+        mapfiltervolume[elfiltervolume.attr('customsort')] = elfiltervolume;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfiltervolume[order[i]]) {
+            elfiltervolume.append(mapfiltervolume[order[i]]);
+        }
+    }  
+  
+    // Fin System sort
+
+	$(document.getElementById('fin-system_fcs-ii')).attr('customsort', 2430);
+	$(document.getElementById('fin-system_futures')).attr('customsort', 2440);
+	$(document.getElementById('fin-system_glass-on')).attr('customsort', 2450);
+	$(document.getElementById('fin-system_fcs')).attr('customsort', 2460);
+
+    var elfilterfinsystem = $('#realfiltergroup_fin-system .productgrid--sidebar-item');
+    var mapfilterfinsystem = {};
+
+     $('#realfiltergroup_fin-system .filter-item').each(function() {
+        var elfilterfinsystem = $(this);
+        mapfilterfinsystem[elfilterfinsystem.attr('customsort')] = elfilterfinsystem;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfilterfinsystem[order[i]]) {
+            elfilterfinsystem.append(mapfilterfinsystem[order[i]]);
+        }
+    } 
+  
+  
+     // Surfboard type sort
+
+	$(document.getElementById('style_shortboard')).attr('customsort', 2500);
+	$(document.getElementById('style_longboard')).attr('customsort', 2510);
+	$(document.getElementById('style_hybrid')).attr('customsort', 2520);
+	$(document.getElementById('style_groveler')).attr('customsort', 2530);
+	$(document.getElementById('style_gun')).attr('customsort', 2540);
+
+    var elfiltersurfboardstyle = $('#realfiltergroup_style .productgrid--sidebar-item');
+    var mapfiltersurfboardstyle = {};
+
+    $('#realfiltergroup_style .filter-item').each(function() {
+        var elfiltersurfboardstyle = $(this);
+        mapfiltersurfboardstyle[elfiltersurfboardstyle.attr('customsort')] = elfiltersurfboardstyle;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfiltersurfboardstyle[order[i]]) {
+            elfiltersurfboardstyle.append(mapfiltersurfboardstyle[order[i]]);
+        }
+    }  
+ 
+
+
+    // Surfboard Filter Group Sort
+    // Length Range, Volume, Fin System, Style
+
+	$(document.getElementById('realfiltergroup_length-range')).attr('customsort', 2900);
+	$(document.getElementById('realfiltergroup_volume')).attr('customsort', 2910);
+	$(document.getElementById('realfiltergroup_fin-system')).attr('customsort', 2920);
+	$(document.getElementById('realfiltergroup_style')).attr('customsort', 2930);
+
+    var elfiltersurfboardfilters = $(document.getElementById('real-filter-wrapper'));
+    var mapfiltersurfboardfilters = {};
+
+    $('#real-filter-wrapper .productgrid--sidebar-section---filters--single').each(function() {
+        var elfiltersurfboardfilters = $(this);
+        mapfiltersurfboardfilters[elfiltersurfboardfilters.attr('customsort')] = elfiltersurfboardfilters;
+    });
+
+    for (var i = 0, l = order.length; i < l; i++) {
+        if (mapfiltersurfboardfilters[order[i]]) {
+            elfiltersurfboardfilters.append(mapfiltersurfboardfilters[order[i]]);
+        }
+    }
