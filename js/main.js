@@ -1,5 +1,5 @@
 /** First Slider  */
-$(".slider-one")
+$(".single-item")
 .not(".slick-initialized")
 .slick({
     autoplay: true,
